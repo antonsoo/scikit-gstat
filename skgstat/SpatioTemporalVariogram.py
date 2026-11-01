@@ -582,13 +582,23 @@ class SpatioTemporalVariogram:
             def wrapped(lags, *args):
                 return self._model(lags, self._marginal_model, *args, 0)
 
-        return curve_fit(
-            wrapped,
+        # Fit dimensionless parameters so changing time/space units
+        # does not change the optimizer's trust-region geometry.
+        scale = np.asarray(bounds, dtype=float)
+        if np.any(scale <= 0):
+            raise ValueError('Each lower bound must be strictly less than each upper bound.')
+
+        def scaled(lags, *args):
+            return wrapped(lags, *(np.asarray(args) * scale))
+
+        cof, cov = curve_fit(
+            scaled,
             lags, y,
             method='trf',
-            p0=np.asarray(bounds),
-            bounds=(0, bounds)
+            p0=np.ones(len(scale)),
+            bounds=(0, 1)
         )
+        return cof * scale, cov * np.outer(scale, scale)
 
     def _marginal(self, axis, h):
         """Apply the fitted marginal model"""
