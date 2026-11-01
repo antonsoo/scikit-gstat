@@ -1,0 +1,7 @@
+{
+  "url": "https://raw.githubusercontent.com/pydata/xarray-data/a35297e9da2cc99c811014f0c8a4297345a5c28d/air_temperature.nc",
+  "repository": "https://github.com/pydata/xarray-data",
+  "commit": "a35297e9da2cc99c811014f0c8a4297345a5c28d",
+  "bytes": 7751328,
+  "sha256": "c606b89c35970a2983b914b76df4adbb409003ef34aa7cfd7f582e41f307482b"
+}

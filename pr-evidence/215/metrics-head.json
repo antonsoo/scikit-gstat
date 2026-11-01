@@ -1,0 +1,132 @@
+{
+  "source": "/home/antonsoloviev/work/projects/opensource-contribs/repos/skgstat-8du4-review215",
+  "source_hash": "afd6f67fe9e057995c591f9e2a6af1d5305ea0eb7c1b190cfcecd947587aeb04",
+  "records": [
+    {
+      "model": "spherical",
+      "metric": "euclidean",
+      "expected": 0.5082329989778311,
+      "exported": 0.5082329989778311,
+      "error": 0.0
+    },
+    {
+      "model": "spherical",
+      "metric": "cityblock",
+      "expected": 0.6875,
+      "exported": 0.5082329989778311,
+      "error": -0.17926700102216886
+    },
+    {
+      "model": "spherical",
+      "metric": "sqeuclidean",
+      "expected": 0.6875,
+      "exported": 0.5082329989778311,
+      "error": -0.17926700102216886
+    },
+    {
+      "model": "exponential",
+      "metric": "euclidean",
+      "expected": 0.6537728345381287,
+      "exported": 0.6537728345381287,
+      "error": 0.0
+    },
+    {
+      "model": "exponential",
+      "metric": "cityblock",
+      "expected": 0.7768698398515702,
+      "exported": 0.6537728345381287,
+      "error": -0.12309700531344148
+    },
+    {
+      "model": "exponential",
+      "metric": "sqeuclidean",
+      "expected": 0.7768698398515702,
+      "exported": 0.6537728345381287,
+      "error": -0.12309700531344148
+    },
+    {
+      "model": "gaussian",
+      "metric": "euclidean",
+      "expected": 0.3934693402873667,
+      "exported": 0.3934693402873667,
+      "error": 0.0
+    },
+    {
+      "model": "gaussian",
+      "metric": "cityblock",
+      "expected": 0.6321205588285577,
+      "exported": 0.3934693402873667,
+      "error": -0.23865121854119098
+    },
+    {
+      "model": "gaussian",
+      "metric": "sqeuclidean",
+      "expected": 0.6321205588285577,
+      "exported": 0.3934693402873667,
+      "error": -0.23865121854119098
+    },
+    {
+      "model": "cubic",
+      "metric": "euclidean",
+      "expected": 0.5071180296121748,
+      "exported": 0.5071180296121749,
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "model": "cubic",
+      "metric": "cityblock",
+      "expected": 0.759765625,
+      "exported": 0.5071180296121749,
+      "error": -0.2526475953878251
+    },
+    {
+      "model": "cubic",
+      "metric": "sqeuclidean",
+      "expected": 0.759765625,
+      "exported": 0.5071180296121749,
+      "error": -0.2526475953878251
+    },
+    {
+      "model": "stable",
+      "metric": "euclidean",
+      "expected": 0.53996315408014,
+      "exported": 0.53996315408014,
+      "error": 0.0
+    },
+    {
+      "model": "stable",
+      "metric": "cityblock",
+      "expected": 0.7042907569863721,
+      "exported": 0.53996315408014,
+      "error": -0.16432760290623216
+    },
+    {
+      "model": "stable",
+      "metric": "sqeuclidean",
+      "expected": 0.7042907569863721,
+      "exported": 0.53996315408014,
+      "error": -0.16432760290623216
+    },
+    {
+      "model": "matern",
+      "metric": "euclidean",
+      "expected": 0.5297981622908292,
+      "exported": 0.5297981622908292,
+      "error": 0.0
+    },
+    {
+      "model": "matern",
+      "metric": "cityblock",
+      "expected": 0.7082925400285993,
+      "exported": 0.5297981622908292,
+      "error": -0.1784943777377701
+    },
+    {
+      "model": "matern",
+      "metric": "sqeuclidean",
+      "expected": 0.7082925400285993,
+      "exported": 0.5297981622908292,
+      "error": -0.1784943777377701
+    }
+  ]
+}
